@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&display=swap'); /* Montserrat, sans-serif */
+
+#body-container {
+    background-color: #121212;
+    margin: 5vh 20vw 0 20vw;
+}
+header h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 2em;
+    background: -webkit-linear-gradient(270deg, #121212, #FFFFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0vh;
+    letter-spacing: 2px;
+}
+nav ul {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+nav ul a {
+    text-decoration: none;
+    color: #BCBCBC;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    padding: 0 30px 0 0;
+    transition: all 0.5s ease-out;
+}
+nav ul a:hover {
+    color: #d4d4d4;
+    transition: 0.5s;
+    transform: translateY(5px);
+}
+#nav-socials {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-top: -20px;
+    padding: 0;
+    width: 100%;
+}
+.fa-github,
+.fa-linkedin-in,
+.fa-discord {
+    color: #BCBCBC;
+}
+.body-text-block {
+    color: #BCBCBC;
+    margin: 15vh 0px 0px 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+.image-block {
+    background-color: #151515;
+    width: fit-content;
+    border-radius: 2.5%;
+    margin: 2.5vh 0px 0px 0px;
+    padding-right: 2.5vw;
+    display: flex;
+    color: #BCBCBC;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+.image-block img { /* Scrap prolly */
+    scale: 60%;
+    transition: ease-in 0.5s;
+}
+.image-block img:hover {
+    transition: ease-out 0.5s;
+    scale: 80%;
+}
