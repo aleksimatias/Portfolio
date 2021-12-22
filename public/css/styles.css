@@ -8,12 +8,15 @@
 header h1 {
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
-    font-size: 2em;
+    font-size: 3em;
     background: -webkit-linear-gradient(270deg, #121212, #FFFFFF);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 0vh;
     letter-spacing: 2px;
+}
+#nav-block a {
+    padding-right: 10px;
 }
 nav ul {
     display: flex;
@@ -34,7 +37,7 @@ nav ul a {
 nav ul a:hover {
     color: #d4d4d4;
     transition: 0.5s;
-    transform: translateY(5px);
+    transform: translateY(3.25px);
 }
 #nav-socials {
     display: flex;
@@ -57,14 +60,29 @@ nav ul a:hover {
 }
 .image-block {
     background-color: #151515;
-    width: fit-content;
-    border-radius: 2.5%;
+    max-width: 80%;
+    border-radius: 1em;
     margin: 2.5vh 0px 0px 0px;
-    padding-right: 2.5vw;
+    padding-right: 0;
+    padding-left: 0;
     display: flex;
+    flex-direction: row;
     color: #BCBCBC;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
+}
+.image-block-text {
+    line-height: 140%;
+    margin: auto;
+    max-width: 52.5%;
+    transition: ease-in 0.5s;
+}
+.image-block-text:hover {
+    transition: ease-out 0.5s;
+    color: #657b81;
+}
+.image-block-text p {
+    margin: 0px;
 }
 .image-block img { /* Scrap prolly */
     scale: 60%;
@@ -72,5 +90,6 @@ nav ul a:hover {
 }
 .image-block img:hover {
     transition: ease-out 0.5s;
+    transform: rotateZ(-2.5deg);
     scale: 80%;
 }
