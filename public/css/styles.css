@@ -101,7 +101,7 @@ nav ul a:hover {
     text-decoration: none;
     color: #BCBCBC;
     font-weight: 700;
-    transition: all 0.25s ease-out;
+    transition: all 0.25s ease-in-out;
 }
 .body-text-body a:hover {
     color: #FFFFFF;
