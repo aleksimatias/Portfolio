@@ -100,7 +100,7 @@ nav ul, nav ul a {
     transition: all 0.5s ease-out;
 }
 nav ul a:hover {
-    color: var(--clr-accent);
+    color: #FFFFFF;
     transition: 0.5s;
 }
 .fa-github,
@@ -282,6 +282,14 @@ h3 { font-size: var(--fs-h3) }
     text-decoration: none;
     color: var(--clr-light);
 }
+.portfolio__item a {
+    transition: all 0.5s ease-out;
+}
+.portfolio__item a:hover {
+    color: #FFFFFF;
+    transition: 0.5s ease-in;
+}
+
 @media (min-width: 900px) {
     .portfolio {
         display: flex;
