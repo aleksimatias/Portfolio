@@ -5,48 +5,117 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aleksi Männistö</title>
-    <link rel="stylesheet" href="/public/css/styles.css">
+    <link rel="stylesheet" href="/public/css/style.css">
     <link rel="stylesheet" media="all" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <style>
+        .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        }
+    </style>
 </head>
 <body id="body-container">
-    <header>
+    <header id="header">
         <h1>ALEKSI MÄNNISTÖ</h1>
         <nav>
             <div id="nav-block">
                 <ul>
-                    <a href="index.html">home</a>
-                    <a href="skills.html">skills</a>
-                    <a href="cv.html">cv</a>
+                    <a href="#home">home</a>
+                    <a href="#services">skills</a>
+                    <a href="#about">about</a>
+                    <a href="https://github.com/aleksimatias" target="_blank" class="fab fa-github"></a>
+                    <a href="https://www.linkedin.com/in/aleksim%C3%A4nnist%C3%B6/" target="_blank" class="fab fa-linkedin-in"></a>
                 </ul>
             </div>
-            <ul id="nav-socials">
-                <a href="https://github.com/aleksimatias" target="_blank" class="fab fa-github"></a>
-                <a href="https://www.linkedin.com/in/aleksim%C3%A4nnist%C3%B6/" target="_blank" class="fab fa-linkedin-in"></a>
-            </ul>
         </nav>
     </header>
-    <div class="body-text-block">
-        <h1>welcome.</h1>
-        <div class="body-text-body">
-            <p> 
-                My name is Aleksi Männistö <br>
-                I'm 22 years old and I currently study Software Engineering
-                at Turku University of Applied Sciences <br>
-                I am passionate about Web and Mobile Development,
-                but I also enjoy UI/UX and graphic design<br>
-                My goal is to create beautiful, functioning interfaces
-            </p>
-            <p>
-                to view my expertise, please refer to the skills page found <a href="skills.html">here</a> <br>
-                <b>thank you.</b>
-            </p>
+
+    <section class="my-services" id="services">
+        <h2 class="section__title section__title--services">knowledge</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Development</h3>
+                <p>html, css, javascript, react, react native</p>
+                <p>mysql, node.js, mongodb, postgre</p>
+            </div>
+            <div class="service">
+                <h3>Design</h3>
+                <p>adobe xd</p>
+                <p>figma</p>
+            </div>
+            <div class="service">
+                <h3>Content Creation</h3>
+                <p>adobe premiere pro</p>
+                <p>adobe after effects</p>
+            </div>
         </div>
-        
-    </div>
+        <a href="#work" class="btn">My Work</a>
+    </section>
+
+    <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">About me</h2>
+        <p class="section__subtitle section__subtitle--about">
+            i'm a 22-year-old, third-year software engineering student at turku university of applied sciences. <br>
+            i enjoy web development, but i also do ui design and i have a long history with video editing.
+        </p>
+        <p class="section__subtitle section__subtitle--about">
+            through school projects i have done mobile app development with react native, <br>
+            web app development with react and i have fiddled with databases as well. <br>
+            you can read more about these projects in the <strong>my work</strong> section.
+        </p>
+        <p class="section__subtitle section__subtitle--about">
+            i'm always eager to learn more, and currently i would love to learn more about front-end frameworks.
+        </p>
+        <div class="btn-container">
+            <a href="cv.html" class="btn">My CV</a>
+        </div>
+    </section>
+
+    <section class="my-work" id="work">
+        <h2 class="section__title section__title--work">My Work</h2>
+        <p class="section__subtitle section__subtitle--work">A small selection of my work</p>
+        <div class="tooltip">
+            <i class="far fa-question-circle">
+                <span class="tooltiptext">Click the titles to view more about these projects.</span>
+            </i>
+        </div>
+
+        <div class="portfolio">
+            <!-- Portfolio item 1 -->
+            <div class="portfolio__item">
+                <a href="#">
+                    DigiReactor
+                </a>
+            </div>
+            <!-- Portfolio item 2 -->
+            <div class="portfolio__item">
+                <a href="#">
+                    Fribakeli (WIP)
+                </a>
+            </div>
+            <!-- Portfolio item 3 -->
+            <div class="portfolio__item">
+                <a href="#">
+                    VirPa - Fire Expert
+                </a>
+            </div>
+            <!-- Portfolio item 4 -->
+            <div class="portfolio__item">
+                <a href="#">
+                    Kilta
+                </a>
+            </div>
+        </div>
+    </section>
+
+
     <footer>
         <a href="https://discordapp.com/users/304695492418469891/" target="_blank">contact me on discord</a>
     </footer>
+
+    <script src="/public/js/sticky.js"></script>
 </body>
 </html>

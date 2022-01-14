@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800;900&display=swap'); /* Montserrat, sans-serif */
+
+/* Root Properties, Viewport sizes */
+:root {
+    --ff-primary: 'Roboto', sans-serif;
+    --ff-secondary: 'Montserrat', sans-serif;
+
+    --fw-light: 100;
+    --fw-reg: 400;
+    --fw-bold: 700;
+
+    --clr-light: #BCBCBC;
+    --clr-dark: #121212;
+    --clr-accent: #787586;
+
+    --fs-h1: 3rem;
+    --fs-h2: 2rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+}
+
+@media (max-width: 800px) {
+    :root {
+
+    }
+}
+
+/* Sticky navbar */
+.sticky {
+    background-color: var(--clr-accent);
+    z-index: 9999;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    transition: ease-in 100ms;
+}
+
+/* General properties */
+body {
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+    margin: 0;
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-body);
+    line-height: 1;
+    text-transform: lowercase;
+}
+section {
+    padding: 3em 2em;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+:focus {
+    outline: 3px solid var(--clr-accent);
+    outline-offset: 2px;
+}
+.btn {
+    display: inline-block;
+    padding: .5em 2em;
+    background: var(--clr-accent);
+    color: var(--clr-dark);
+    text-decoration: none;
+    font-weight: var(--fw-bold);
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: transform 200ms ease-in-out;
+}
+.btn:hover {
+    transform: scale(1.025);
+    background-color: #ACA7CB;
+    transition: transform 100ms ease-in-out;
+}
+header {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+header h1 {
+    font-weight: 100;
+    background: -webkit-linear-gradient(270deg, #121212, #FFFFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+nav ul, nav ul a {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 26vw;
+    text-decoration: none;
+    color: #BCBCBC;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    transition: all 0.5s ease-out;
+}
+nav ul a:hover {
+    color: var(--clr-accent);
+    transition: 0.5s;
+}
+.fa-github,
+.fa-linkedin-in,
+.fa-discord {
+    color: #BCBCBC;
+    margin-left: -40px;
+}
+footer {
+    margin-top: auto;
+    text-align: center;
+}
+footer a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    color: #1f1f1f;
+    transition: 0.5s ease-in;
+}
+footer a:hover {
+    color: #BCBCBC;
+    transition: 0.5s ease-out;
+}
+.section__title {
+    text-align: center;
+}
+
+/* Text styling */
+h1, h2, h3 {
+    line-height: 1.1;
+    margin: 0;
+}
+h1 {
+    font-size: var(--fs-h1);
+    font-family: var(--ff-primary);
+}
+h2 { font-size: var(--fs-h2) }
+h3 { font-size: var(--fs-h3) }
+
+.section__title {
+    margin-bottom: .25em;
+}
+.section__title--intro {
+    font-weight: var(--fw-bold);
+}
+.section__subtitle {
+    margin: 0;
+    font-size: var(--fs-h3);
+}
+.section__subtitle--intro,
+.section__subtitle--about {
+    margin-bottom: 1em;
+    padding: .25em;
+}
+
+/* Intro */
+.intro {
+    position: relative;
+    text-align: center;
+}
+.section__subtitle--intro {
+    display: inline-block;
+}
+
+@media (min-width: 600px) {
+    .intro {
+        display: grid;
+    }
+    /* .section__subtitle--intro {
+        align-self: start;
+        grid-column: -1 / 1;
+        grid-row: 2;
+    } */
+}
+
+/* Services */
+.my-services {
+    text-align: center;
+}
+.services:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.service {
+    float: left;
+    width: 33.33%;
+    padding: 0 0 2rem 0;
+    transition: all 250ms ease-out;
+    text-align: center;
+    line-height: 0.5;
+}
+.service h3 {
+    font-size: 1.5rem;
+}
+.service p:hover {
+    transition: all 250ms ease-out;
+    color: var(--clr-accent);
+}
+.section__title--services {
+    position: relative;
+}
+.section__title--services::after,
+.section__title--about::after,
+.section__title--work::after {
+    content: '';
+    display: block;
+    width: 4em;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background: var(--clr-accent);
+    opacity: 0.5;
+}
+
+@media (min-width: 900px) {
+    .services {
+        display: flex;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .service + .service {
+        margin-left: 2em;
+    }
+}
+
+/* About me */
+.about-me {
+    max-width: 1000px;
+    margin: auto;
+}
+.btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.section__subtitle--about {
+    text-align: center;
+    font-size: var(--fs-body);
+    line-height: 1.2;
+}
+
+@media (min-width: 600px) {
+    .section__subtitle--about {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+}
+
+.my-work {
+    text-align: center;
+}
+.section__title--work {
+    position: relative;
+}
+.section__title--work::after {
+    content: '';
+    display: block;
+    width: 3em;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background: var(--clr-accent);
+    opacity: 0.5;
+}
+.section__subtitle--work {
+    margin-bottom: 2em;
+    font-size: var(--fs-body);
+}
+.portfolio {
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 1rem;
+}
+.portfolio__item, .portfolio__item a {
+    margin: auto;
+    font-weight: var(--fw-bold);
+    text-transform: none;
+    text-decoration: none;
+    color: var(--clr-light);
+}
+@media (min-width: 900px) {
+    .portfolio {
+        display: flex;
+        max-width: 1000px;
+        justify-content: center;
+    }
+}
+
+/* Tooltip area */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+.tooltiptext {
+    visibility: hidden;
+    width: 240px;
+    background-color: var(--clr-light);
+    color: var(--clr-dark);
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -120px;
+    font-family:var(--ff-secondary);
+    font-size: 0.9rem;
+}
+.tooltip .tooltiptext::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: var(--clr-light) transparent transparent transparent;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+.section__subtitle--work {
+    margin-bottom: 0.5rem;
+}
