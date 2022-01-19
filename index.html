@@ -10,11 +10,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style>
-        .sticky {
-        position: fixed;
-        top: 0;
-        width: 100%;
+        .sticky, .sticky-burger {
+            position: fixed;
+            top: 0;
+            width: 100%;
         }
+        .sticky-burger {
+            left: 0;
+        }
+        
     </style>
 </head>
 <body id="body-container">
@@ -29,6 +33,18 @@
                     <a href="#work">work</a>
                     <a href="https://github.com/aleksimatias" target="_blank" class="fab fa-github"></a>
                     <a href="https://www.linkedin.com/in/aleksim%C3%A4nnist%C3%B6/" target="_blank" class="fab fa-linkedin-in"></a>
+                </ul>
+            </div>
+            <div class="a-header" id="burger-id">
+                <input type="checkbox" name="main-nav" id="main-nav" class="burger-check">
+                <label for="main-nav" class="burger menu"><span></span></label>
+                <ul>
+                    <li><a href="#header">home</a></li>
+                    <li><a href="#services">skills</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#work">work</a></li>
+                    <li><a href="https://github.com/aleksimatias" target="_blank" class="fab fa-github"></a></li>
+                    <li><a href="https://www.linkedin.com/in/aleksim%C3%A4nnist%C3%B6/" target="_blank" class="fab fa-linkedin-in"></a></li>
                 </ul>
             </div>
         </nav>
@@ -137,5 +153,6 @@
     </footer>
 
     <script src="/public/js/sticky.js"></script>
+    <script src="/public/js/sticky-brg.js"></script>
 </body>
 </html>
