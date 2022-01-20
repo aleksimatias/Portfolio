@@ -1,90 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aleksi Männistö</title>
-    <link rel="stylesheet" href="/public/css/style.css">
-    <link rel="stylesheet" media="all" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Aleksi Männistö</title>
+        <link rel="stylesheet" href="/public/css/style.css" />
+        <link
+            rel="stylesheet"
+            media="all"
+            href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
 
-    <style>
-        .sticky {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        }
-    </style>
-</head>
-<body id="body-container">
-    <header id="header">
-        <h1>ALEKSI MÄNNISTÖ</h1>
-        <nav>
-            <div id="nav-block">
-                <ul>
-                    <a href="index.html#header">home</a>
-                    <a href="index.html#services">skills</a>
-                    <a href="index.html#about">about</a>
-                    <a href="index.html#work">work</a>
-                    <a href="https://github.com/aleksimatias" target="_blank" class="fab fa-github"></a>
-                    <a href="https://www.linkedin.com/in/aleksim%C3%A4nnist%C3%B6/" target="_blank" class="fab fa-linkedin-in"></a>
-                </ul>
+        <style>
+            .sticky {
+                position: fixed;
+                top: 0;
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body id="body-container">
+        <header id="header">
+            <h1>ALEKSI MÄNNISTÖ</h1>
+            <nav>
+                <div id="nav-block">
+                    <ul>
+                        <a href="index.html#header">home</a>
+                        <a href="index.html#services">skills</a>
+                        <a href="index.html#about">about</a>
+                        <a href="index.html#work">work</a>
+                        <a
+                            href="https://github.com/aleksimatias"
+                            target="_blank"
+                            class="fab fa-github"
+                        ></a>
+                        <a
+                            href="https://www.linkedin.com/in/aleksim%C3%A4nnist%C3%B6/"
+                            target="_blank"
+                            class="fab fa-linkedin-in"
+                        ></a>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <section class="cv">
+            <div class="cv-body">
+                <div class="cv-edu">
+                    <h1>Education</h1>
+                    <div class="cv-edu-item">
+                        <img src="/public/images/cv/tuas.png" alt="" />
+                        <h2>Turku University of Applied Sciences</h2>
+                        <h4>
+                            B.Eng, Information and Communication Technology
+                            <br />
+                            Software Engineering and Project Management
+                        </h4>
+                        <p>2019 September - Present</p>
+                    </div>
+                    <div class="cv-edu-item">
+                        <img src="/public/images/cv/lyseo.jpg" alt="" />
+                        <h2>Vaasan Lyseon Lukio</h2>
+                        <h4>Matriculation Examination</h4>
+                        <p>2015 September - 2018 May</p>
+                    </div>
+                </div>
+                <a class="fas fa-angle-double-down" href="#workexp"></a>
+                <div class="cv-work" id="workexp">
+                    <h1>Work Experience</h1>
+                    <div class="cv-work-item">
+                        <img src="/public/images/cv/imabox.png" alt="" />
+                        <h2>ImA-Box</h2>
+                        <h4>Internship, Student Assistant</h4>
+                        <p>2021 February - 2021 August</p>
+                        <p>Research, Video Production</p>
+                    </div>
+                    <div class="cv-work-item">
+                        <img src="/public/images/cv/mts.jpg" alt="" />
+                        <h2>MyTrueSound</h2>
+                        <h4>Internship, Practical Work</h4>
+                        <p>2020 December - 2021 May</p>
+                        <p>Audiovisual Content Creation</p>
+                    </div>
+                    <div class="cv-work-item">
+                        <img src="/public/images/cv/wrt.webp" alt="" />
+                        <h2>Wärtsilä Energy Solutions</h2>
+                        <h4>Seasonal Work, Development Engineer Trainee</h4>
+                        <p>2018 June - 2018 September</p>
+                        <p>IT Work, Development of Office Environment</p>
+                    </div>
+                </div>
+                <a class="fas fa-angle-double-up" href="#header"></a>
             </div>
-        </nav>
-    </header>
+        </section>
 
-    <section class="cv">
-        <div class="cv-body">
-            <div class="cv-edu">
-                <h1>Education</h1>
-                <div class="cv-edu-item">
-                    <img src="/public/images/cv/tuas.png" alt="">
-                    <h2>Turku University of Applied Sciences</h2>
-                    <h4>B.Eng, Information and Communication Technology <br>
-                        Software Engineering and Project Management</h4>
-                    <p>2019 September - Present</p>
-                </div>
-                <div class="cv-edu-item">
-                    <img src="/public/images/cv/lyseo.jpg" alt="">
-                    <h2>Vaasan Lyseon Lukio</h2>
-                    <h4>Matriculation Examination</h4>
-                    <p>2015 September - 2018 May</p>
-                </div>
-            </div>
-            <a class="fas fa-angle-double-down" href="#workexp"></a>
-            <div class="cv-work" id="workexp">
-                <h1>Work Experience</h1>
-                <div class="cv-work-item">
-                    <img src="/public/images/cv/imabox.png" alt="">
-                    <h2>ImA-Box</h2>
-                    <h4>Internship, Student Assistant</h4>
-                    <p>2021 February - 2021 August</p>
-                    <p>Research, Video Production</p>
-                </div>
-                <div class="cv-work-item">
-                    <img src="/public/images/cv/mts.jpg" alt="">
-                    <h2>MyTrueSound</h2>
-                    <h4>Internship, Practical Work</h4>
-                    <p>2020 December - 2021 May</p>
-                    <p>Audiovisual Content Creation</p>
-                </div>
-                <div class="cv-work-item">
-                    <img src="/public/images/cv/wrt.webp" alt="">
-                    <h2>Wärtsilä Energy Solutions</h2>
-                    <h4>Seasonal Work, Development Engineer Trainee</h4>
-                    <p>2018 June - 2018 September</p>
-                    <p>IT Work, Development of Office Environment</p>
-                </div>
-            </div>
-            <a class="fas fa-angle-double-up" href="#header"></a>
-        </div>
-    </section>
+        <footer>
+            <a
+                href="https://discordapp.com/users/304695492418469891/"
+                target="_blank"
+                >contact me on discord</a
+            >
+        </footer>
 
-    <footer>
-        <a href="https://discordapp.com/users/304695492418469891/" target="_blank">contact me on discord</a>
-    </footer>
-
-    <script src="/public/js/sticky.js"></script>
-</body>
+        <script src="/public/js/sticky.js"></script>
+    </body>
 </html>
