@@ -52,7 +52,6 @@ body {
     font-family: var(--ff-secondary);
     font-size: var(--fs-body);
     line-height: 1;
-    text-transform: lowercase;
 }
 
 @keyframes fadeIn {
@@ -689,6 +688,16 @@ h3 {
     height: 50px;
 }
 
+#alt-header,
+.fa-arrow-left,
+#dr-mobile-visible {
+    display: none;
+}
+
+#dr-mobile-hidden {
+    visibility: visible;
+}
+
 /* Breakpoints */
 @media (max-width: 800px) {
     :root {
@@ -738,8 +747,90 @@ h3 {
     #nav-block {
         display: none;
     }
-    .a-header {
+    #header {
+        display: none;
+    }
+    #alt-header {
         display: initial;
+        padding-left: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    #alt-header a {
+        text-decoration: none;
+    }
+    .tooltip {
+        display: none;
+    }
+    .section__subtitle,
+    .portfolio__item__desc {
+        line-height: 1.6;
+    }
+    #alt-header #nav-block {
+        display: initial;
+    }
+    nav ul {
+        width: 100px;
+        margin: auto;
+        padding-right: 15px;
+    }
+    .section__subtitle--work {
+        margin-bottom: 1.5rem;
+    }
+    .fa-arrow-left {
+        display: initial;
+        position: relative;
+        top: 1.1rem;
+        left: -10rem;
+        text-decoration: none;
+        color: var(--clr-light);
+    }
+
+    .intro,
+    .intro-alt,
+    .intro-virpa,
+    .intro-kilta {
+        margin: 8rem auto 0;
+        position: relative;
+        text-align: left;
+        max-width: 70vw;
+        height: 400px;
+        background-color: #41337a;
+        filter: drop-shadow(4px 4px 4px #000000);
+        align-content: center;
+    }
+    .intro {
+        background-color: #41337a;
+        height: 500px;
+    }
+    .intro-alt {
+        background-color: #013869;
+        width: 70vw;
+    }
+    .intro-virpa {
+        background-color: #046343;
+        align-content: center;
+        height: 450px;
+    }
+    .intro-kilta {
+        background-color: #ffd5a3;
+        margin-bottom: 8rem;
+        height: 330px;
+    }
+    #dr-mobile-hidden {
+        display: none;
+    }
+    #dr-mobile-visible {
+        display: initial;
+    }
+
+    .intro__img,
+    .intro__img--2,
+    .intro__img--3,
+    .intro__img--4,
+    .intro__img--5 {
+        display: none;
     }
 }
 

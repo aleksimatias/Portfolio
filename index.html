@@ -17,14 +17,10 @@
         />
 
         <style>
-            .sticky,
-            .sticky-burger {
+            .sticky {
                 position: fixed;
                 top: 0;
                 width: 100%;
-            }
-            .sticky-burger {
-                left: 0;
             }
         </style>
     </head>
@@ -84,47 +80,69 @@
             </nav>
         </header>
 
+        <header id="alt-header">
+            <nav>
+                <h1>
+                    <a href="#alt-header">AM</a>
+                </h1>
+                <div id="nav-block">
+                    <ul>
+                        <a
+                            href="https://github.com/aleksimatias"
+                            target="_blank"
+                            class="fab fa-github"
+                        ></a>
+                        <a
+                            href="https://www.linkedin.com/in/aleksim%C3%A4nnist%C3%B6/"
+                            target="_blank"
+                            class="fab fa-linkedin-in"
+                        ></a>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
         <section class="my-services" id="services">
             <h2 class="section__title section__title--services">knowledge</h2>
             <div class="services">
                 <div class="service">
                     <h3>Development</h3>
-                    <p>html, css, javascript, react, react native</p>
-                    <p>mysql, node.js, mongodb, postgre</p>
+                    <p>HTML, CSS, JavaScript, React.js, React Native</p>
+                    <p>MySQL, Node.js, MongoDB, Postgre</p>
                 </div>
                 <div class="service">
                     <h3>Design</h3>
-                    <p>adobe xd</p>
-                    <p>figma</p>
+                    <p>Adobe XD</p>
+                    <p>Figma</p>
                 </div>
                 <div class="service">
                     <h3>Content Creation</h3>
-                    <p>adobe premiere pro</p>
-                    <p>adobe after effects</p>
+                    <p>Adobe Premiere Pro</p>
+                    <p>Adobe After Effects</p>
                 </div>
             </div>
             <a href="#work" class="btn">My Work</a>
         </section>
 
-        <section class="about-me" id="about">
+        <section class="about-me" style="text-transform: none" id="about">
             <h2 class="section__title section__title--about">About me</h2>
             <p class="section__subtitle section__subtitle--about">
-                i'm a 22-year-old, third-year software engineering student at
-                turku university of applied sciences. <br />
-                i enjoy web development, but i also do ui design and i have a
+                I'm a 22-year-old, third-year Software Engineering student at
+                Turku University of Applied Sciences. <br />
+                I enjoy Web Development, but i also do UI design and I have a
                 long history with video editing.
             </p>
             <p class="section__subtitle section__subtitle--about">
-                through school projects i have done mobile app development with
-                react native, <br />
-                web app development with react and i have fiddled with databases
+                Through school projects I have done Mobile app development with
+                React Native, <br />
+                Web app development with React and I have fiddled with databases
                 as well. <br />
-                you can read more about these projects in the
-                <strong>my work</strong> section.
+                You can read more about these projects in the
+                <strong>My Work</strong> section.
             </p>
             <p class="section__subtitle section__subtitle--about">
-                i'm always eager to learn more, and currently i would love to
-                learn more about front-end frameworks.
+                I'm always eager to learn more, and currently I would love to
+                learn more about Front-End frameworks.
             </p>
             <div class="btn-container">
                 <a href="cv.html" class="btn">My CV</a>
@@ -200,6 +218,5 @@
         </footer>
 
         <script src="/public/js/sticky.js"></script>
-        <script src="/public/js/sticky-brg.js"></script>
     </body>
 </html>
