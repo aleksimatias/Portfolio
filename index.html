@@ -1,48 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aleksi Männistö</title>
-    <link rel="stylesheet" href="/public/css/styles.css">
-    <link rel="stylesheet" media="all" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Aleksi Männistö</title>
+        <link rel="stylesheet" href="/public/css/style.css" />
+        <link
+            rel="stylesheet"
+            media="all"
+            href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
 
-</head>
-<body id="body-container">
-    <header>
-        <h1>ALEKSI MÄNNISTÖ</h1>
-        <nav>
-            <div id="nav-block">
-                <ul>
-                    <a href="index.html">about</a>
-                    <a href="skills.html">skills</a>
-                    <a href="#">cv</a>
-                </ul>
+        <style>
+            .sticky {
+                position: fixed;
+                top: 0;
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body id="body-container">
+        <header id="header">
+            <h1>ALEKSI MÄNNISTÖ</h1>
+            <nav>
+                <div id="nav-block">
+                    <ul>
+                        <a href="#header">home</a>
+                        <a href="#services">skills</a>
+                        <a href="#about">about</a>
+                        <a href="#work">work</a>
+                        <a
+                            href="https://github.com/aleksimatias"
+                            target="_blank"
+                            class="fab fa-github"
+                        ></a>
+                        <a
+                            href="https://www.linkedin.com/in/aleksim%C3%A4nnist%C3%B6/"
+                            target="_blank"
+                            class="fab fa-linkedin-in"
+                        ></a>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <header id="alt-header">
+            <nav>
+                <h1>
+                    <a href="#alt-header">AM</a>
+                </h1>
+                <div id="nav-block">
+                    <ul>
+                        <a
+                            href="https://github.com/aleksimatias"
+                            target="_blank"
+                            class="fab fa-github"
+                        ></a>
+                        <a
+                            href="https://www.linkedin.com/in/aleksim%C3%A4nnist%C3%B6/"
+                            target="_blank"
+                            class="fab fa-linkedin-in"
+                        ></a>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <section class="my-services" id="services">
+            <h2 class="section__title section__title--services">knowledge</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Development</h3>
+                    <p>JavaScript, React.js, React Native</p>
+                    <p>MySQL, Node.js, MongoDB, Postgre</p>
+                </div>
+                <div class="service">
+                    <h3>Design</h3>
+                    <p>Adobe XD</p>
+                    <p>Figma</p>
+                </div>
+                <div class="service">
+                    <h3>Content Creation</h3>
+                    <p>Adobe Premiere Pro</p>
+                    <p>Adobe After Effects</p>
+                </div>
             </div>
-            <ul id="nav-socials">
-                <a href="https://github.com/aleksimatias" target="_blank" class="fab fa-github"></a>
-                <a href="https://www.linkedin.com/in/aleksim%C3%A4nnist%C3%B6/" target="_blank" class="fab fa-linkedin-in"></a>
-            </ul>
-        </nav>
-    </header>
-    <div class="body-text-block">
-        <h1>about me</h1>
-    </div>
-    <div class="block-wrapper">
-        <div class="image-block">
-            <img src="public/images/placeholder.png" alt="placeholder">
-            <div class="image-block-text">
-                <h2>Hi. I am Aleksi Männistö.</h2>
-                <p>I am a 22-year-old Software Engineering student
-                    that currently attends <span class="effect">Turku University of Applied Sciences.</span>
-                    I enjoy Front-End Development and UI/UX Design.</p>
+            <a href="#work" class="btn">My Work</a>
+        </section>
+
+        <section class="about-me" style="text-transform: none" id="about">
+            <h2 class="section__title section__title--about">About me</h2>
+            <p class="section__subtitle section__subtitle--about">
+                I'm a 22-year-old, third-year Software Engineering student at
+                Turku University of Applied Sciences. <br />
+                I enjoy Web Development, but i also do UI design and I have a
+                long history with video editing.
+            </p>
+            <p class="section__subtitle section__subtitle--about">
+                Through school projects I have done Mobile app development with
+                React Native, <br />
+                Web app development with React and I have fiddled with databases
+                as well. <br />
+                You can read more about these projects in the
+                <strong>My Work</strong> section.
+            </p>
+            <p class="section__subtitle section__subtitle--about">
+                I'm always eager to learn more, and currently I would love to
+                learn more about Front-End frameworks.
+            </p>
+            <div class="btn-container">
+                <a href="cv.html" class="btn">My CV</a>
             </div>
-        </div>
-    </div>
-    <footer>
-        <a href="https://discordapp.com/users/304695492418469891/" target="_blank">contact me on discord</a>
-    </footer>
-</body>
+        </section>
+
+        <section class="my-work" id="work">
+            <h2 class="section__title section__title--work">My Work</h2>
+            <p class="section__subtitle section__subtitle--work">
+                A small selection of my work
+            </p>
+            <div class="tooltip">
+                <i class="far fa-question-circle">
+                    <span class="tooltiptext"
+                        >Click the titles to view more about these
+                        projects.</span
+                    >
+                </i>
+            </div>
+
+            <div class="portfolio">
+                <!-- Portfolio item 1 -->
+                <div class="portfolio__item">
+                    <a href="portfolio-item.html#digireactor"> DigiReactor </a>
+                    <p class="portfolio__item__desc">
+                        Mobile application to boost digital product development
+                        skills.<br />
+                        School project, created with React Native. <br />
+                    </p>
+                </div>
+                <!-- Portfolio item 2 -->
+                <div class="portfolio__item">
+                    <a href="portfolio-item.html#fribakeli">
+                        Fribakeli (WIP)
+                    </a>
+                    <p class="portfolio__item__desc">
+                        Web application combining weather data with Disc Golf
+                        locations.<br />
+                        School project, created with React.
+                    </p>
+                </div>
+                <!-- Portfolio item 3 -->
+                <div class="portfolio__item">
+                    <a href="portfolio-item.html#virpa">
+                        VirPa - Fire Expert
+                    </a>
+                    <p class="portfolio__item__desc">
+                        Video work for VirPa - a fire safety game by TUAS.<br />
+                        Work done with Premiere Pro, After Effects and Audition.
+                    </p>
+                </div>
+                <!-- Portfolio item 4 -->
+                <div class="portfolio__item">
+                    <a href="portfolio-item.html#kilta"> Kilta </a>
+                    <p class="portfolio__item__desc">
+                        Video work for Kilta - a RPG by MyTrueSound.<br />
+                        Work done with Premiere Pro, After Effects and Vegas
+                        Pro.
+                    </p>
+                </div>
+            </div>
+            <div class="btn-container">
+                <a href="portfolio-item.html" class="btn">Portfolio</a>
+            </div>
+        </section>
+
+        <footer>
+            <a
+                href="https://discordapp.com/users/304695492418469891/"
+                target="_blank"
+                >contact me on discord</a
+            >
+        </footer>
+
+        <script src="/public/js/sticky.js"></script>
+    </body>
 </html>
